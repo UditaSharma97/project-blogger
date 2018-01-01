@@ -1,0 +1,11 @@
+<h1>All Tags</h1>
+
+<ul id="articles" >
+  <li><%= link_to "GoTo All Articles", articles_path %></li>
+
+  <% @tags.each do |tag| %>
+    <li>
+      <%= tag.name %>
+    </li>
+  <% end %>
+</ul>
